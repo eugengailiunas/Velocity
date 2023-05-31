@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Open+Sans&display=swap');
+
+/* main styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: 14px;
+}
+
+.container {
+  width: min (100% - 40px, 940px);
+  margin-inline: auto;
+}
+
+p {
+  color: #6A859C;
+  line-height: 1.8;
+}
