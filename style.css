@@ -8,11 +8,148 @@ body {
 }
 
 .container {
-  width: min (100% - 40px, 940px);
-  margin-inline: auto;
+  max-width: 940px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p {
   color: #6A859C;
   line-height: 1.8;
+}
+
+/* -------- HEADER -------- */
+.header {
+  padding: 20px 0;
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  background-color: #ffffff;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 25px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  color: #69B9FF;
+}
+
+.header__menu {}
+
+.menu {}
+
+.menu__list {
+  display: flex;
+  gap: 40px;
+}
+
+.menu__link {
+  color: #676770;
+  transition: color 0.2s;
+}
+
+.menu__link:hover {
+  color: #0082F3;
+}
+
+.menu__link:active {
+  color: #096dc4;
+}
+
+/* -------- MAIN --------  */
+.main {}
+
+/* -------- WELCOME SECTION --------  */
+.welcome {
+  padding: 195px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #ffffff;
+  min-height: 600px;
+
+  background-color: #768594;
+  background-image: url(img/welcome-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.welcome__content {}
+
+.welcome__title {
+  font-size: 60px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+
+.welcome__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.link-primary {
+  display: inline-block;
+  padding: 11px 30px;
+
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  background-color: #69B9FF;
+  border-radius: 4px;
+
+  transition: background-color 0.5s;
+}
+
+.link-primary:hover {
+  background-color: #49a9fd;
+}
+
+.link-primary:active {
+  background-color: #218deb;
+}
+
+.link {
+  display: inline-block;
+  padding: 10px 30px;
+
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.link:active {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.5);
 }
