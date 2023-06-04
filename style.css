@@ -25,6 +25,17 @@ p {
   text-align: center;
 }
 
+.common-section--dark {
+  background-color: #172024;
+  color-scheme: #ffffff;
+}
+
+.common-section--dark * {
+  color: #ffffff;
+}
+
+/* знак * используется для того, чтоб выделить все объекты в данной обёртке */
+
 .titles-wrapper {
   text-align: center;
   margin-bottom: 60px;
@@ -52,7 +63,7 @@ p {
 }
 
 .subtitle-second {
-  color: #ffffff;
+  color: #E8E8E8;
 }
 
 .hide {
@@ -70,6 +81,8 @@ p {
   z-index: 999;
 
   background-color: #ffffff;
+
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
 .header__container {
@@ -214,7 +227,7 @@ p {
 .item__image {
   width: 94px;
   height: 94px;
-  object-fit: cover;
+  object-fit: contain;
   /* это для того, если вставить новую картинку и чтоб она была таких размеров 
 и занимала все это пространство */
 
@@ -243,10 +256,10 @@ p {
 
 
 /* -------- SERVICES SECTION -------- */
-.services {
+/* .services {
   background-color: #172024;
   color-scheme: #ffffff;
-}
+} */
 
 
 .services__content {
@@ -259,6 +272,7 @@ p {
 
 .services__item {
   padding-top: 20px;
+  width: 45%;
 }
 
 .services__image {
@@ -271,7 +285,6 @@ p {
   line-height: 1.5;
   letter-spacing: 7px;
   text-transform: uppercase;
-  color: #FFFFFF;
 
   margin-top: 20px;
   margin-bottom: 20px;
@@ -280,15 +293,10 @@ p {
 .services__text-item {
   font-size: 14px;
   line-height: 1.8;
-  color: #FFFFFF;
   margin: auto;
   margin-bottom: 20px;
 
-  width: 394px;
-}
-
-.services__link {
-  color: #ffffff;
+  width: 90%;
 }
 
 .link__services:active {
