@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header hide">
     <div class="container header__container">
       <h1 class="logo">Velocity</h1>
 
@@ -27,7 +27,7 @@
 
   <main class="main">
     <!-- first section WELCOME -->
-    <section class="welcome">
+    <section class="welcome hide">
       <div class="container">
         <h2 class="welcome__title">This is Velocity</h2>
 
@@ -40,11 +40,11 @@
     </section>
 
     <!-- second section What We Do -->
-    <section class="opportunities">
+    <section class="opportunities common-section">
       <div class="container">
-        <h2 class="opportunities__title">What we do</h2>
-        <div class="opportunities__text text">
-          <p class="text__place">This is some text inside of a div block.</p>
+        <div class="titles-wrapper">
+          <h3 class="title">What we do</h3>
+          <p class="subtitle">This is some text inside of a div block.</p>
         </div>
         <div class="opportunities__content">
           <div class="opportunities__item item">
@@ -53,12 +53,12 @@
             <p class="item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis expedita
               repudiandae doloribus ut quam labore.</p>
           </div>
-          <div class="opportunities__item">
+          <div class="opportunities__item item">
             <img class="item__image" src="img/card-icon2.svg" alt="arrows">
             <h3 class="item__title">Awesome code</h3>
             <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, beatae quidem.</p>
           </div>
-          <div class="opportunities__item">
+          <div class="opportunities__item item">
             <img class="item__image" src="img/card-icon3.svg" alt="envelop">
             <h3 class="item__title">Free template</h3>
             <p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At corrupti laborum magni
@@ -69,11 +69,11 @@
     </section>
 
     <!-- third section SERVICES -->
-    <section class="services">
+    <section class="services common-section">
       <div class="container">
-        <h2 class="services__title">Services</h2>
-        <div class="services__text text">
-          <p class="text__place">This is some text inside of a div block.</p>
+        <div class="titles-wrapper">
+          <h2 class="title title-second">Services</h2>
+          <p class="subtitle subtitle-second">This is some text inside of a div block.</p>
         </div>
         <div class="services__content">
           <div class="services__item">
@@ -87,13 +87,54 @@
             </div>
           </div>
           <div class="services__item">
-            <img class="services__image" src="img/services2.jpg" alt="man">
+            <img class="services__image" src="img/services2.jpg" alt="music">
             <h3 class="services__title-item">Services two</h3>
             <p class="services__text-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
               enim in eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
               varius.</p>
             <div class="services__link">
               <a class="link link__services" href="#!">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- fourth section TAB -->
+    <section class="tab common-section">
+      <div class="container">
+        <div class="titles-wrapper">
+          <h3 class="title">Tab section</h3>
+          <p class="subtitle">This is some text inside of a div block.</p>
+        </div>
+        <div class="tabs">
+          <div class="tabs__nav">
+            <button class="button">Tab Button 1</button>
+            <button class="button">Tab Button 2</button>
+            <button class="button">Tab Button 3</button>
+          </div>
+
+          <div class="tabs__item">
+            <img class="tabs__image" src="img/tab1.jpg" alt="img">
+            <h4 class="tabs__title">Some Title Here</h4>
+            <div class="tabs__description">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique.</p>
+            </div>
+          </div>
+          <div class="tabs__item">
+            <img class="tabs__image" src="img/tab2.jpg" alt="img">
+            <h4 class="tabs__title">Some Title Here</h4>
+            <div class="tabs__description">
+              <p>Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+            </div>
+          </div>
+          <div class="tabs__item">
+            <img class="tabs__image" src="img/tab3.jpg" alt="img">
+            <h4 class="tabs__title">Some Title Here</h4>
+            <div class="tabs__description">
+              <p>Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique
+                posuere.</p>
             </div>
           </div>
         </div>

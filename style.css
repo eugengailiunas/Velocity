@@ -20,6 +20,45 @@ p {
   line-height: 1.8;
 }
 
+.common-section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.titles-wrapper {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 30px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #676770;
+  margin-bottom: 15px;
+}
+
+.title-second {
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 17px;
+  line-height: 1.18;
+  /* text-align: center; */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #8E8E9C;
+}
+
+.subtitle-second {
+  color: #ffffff;
+}
+
+.hide {
+  display: none !important;
+}
+
 /* -------- HEADER -------- */
 .header {
   padding: 20px 0;
@@ -155,37 +194,7 @@ p {
 }
 
 /* -------- OPPORTUNITY SECTION -------- */
-.opportunities {
-  text-align: center;
-
-  padding-bottom: 80px;
-}
-
-.opportunities__title {
-  font-size: 30px;
-  /* text-align: center; */
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: #676770;
-
-  margin-top: 85px;
-  padding-bottom: 15px;
-}
-
-.opportunities__text {}
-
-.text {}
-
-.text__place {
-  font-size: 17px;
-  line-height: 1.18;
-  /* text-align: center; */
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #8E8E9C;
-
-  padding-bottom: 65px;
-}
+.opportunities {}
 
 .opportunities__content {
   display: flex;
@@ -193,11 +202,9 @@ p {
 }
 
 .opportunities__item {
-  padding: 16px 12px;
-
+  padding: 35px 15px 20px;
   width: 300px;
   min-height: 290px;
-
   border: 1px solid #DCEBF7;
   border-radius: 5px;
 }
@@ -205,8 +212,13 @@ p {
 .item {}
 
 .item__image {
-  margin-top: 25px;
-  padding-bottom: 20px;
+  width: 94px;
+  height: 94px;
+  object-fit: cover;
+  /* это для того, если вставить новую картинку и чтоб она была таких размеров 
+и занимала все это пространство */
+
+  margin-bottom: 20px;
 }
 
 .item__title {
@@ -218,7 +230,7 @@ p {
 
   color: #676770;
 
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .item__text {
@@ -234,38 +246,25 @@ p {
 .services {
   background-color: #172024;
   color-scheme: #ffffff;
-  text-align: center;
-  padding: 100px 0;
 }
 
-.services__title {
-  font-size: 30px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-
-  color: #FFFFFF;
-  padding-bottom: 20px;
-}
-
-.text__place {}
 
 .services__content {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
-.services__item {}
+.services__item {
+  padding-top: 20px;
+}
 
 .services__image {
   width: 430px;
   max-height: 273px;
 }
-
-/* todo 
-1. поработать с картинками, либо добавить новые, либо выровнять нормально
-2. 
-
-*/
 
 .services__title-item {
   font-size: 20px;
@@ -275,15 +274,15 @@ p {
   color: #FFFFFF;
 
   margin-top: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .services__text-item {
   font-size: 14px;
   line-height: 1.8;
   color: #FFFFFF;
-  padding-bottom: 20px;
   margin: auto;
+  margin-bottom: 20px;
 
   width: 394px;
 }
@@ -297,14 +296,49 @@ p {
   border-color: rgba(238, 232, 232, 0.5);
 }
 
-.link {
-  font-size: 16px;
-  line-height: 21px;
-  /* identical to box height, or 131% */
+/* --------- TAB SECTION ---------- */
+.tab {}
 
-  text-align: center;
+.tabs {}
+
+.tabs__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.button {
+  padding: 1px 30px;
+
+  font-size: 16px;
+  line-height: 1.31;
   letter-spacing: 2px;
   text-transform: uppercase;
 
   color: #FFFFFF;
+
+  background: #92A0AD;
+  border-radius: 4px;
+}
+
+.tabs__item {}
+
+.tabs__image {
+  margin-bottom: 15px;
+}
+
+.tabs__title {
+  font-size: 31px;
+  line-height: 1.16;
+
+  color: #676770;
+}
+
+.tabs__description {
+  font-size: 13px;
+  line-height: 1.92;
+
+  color: #6A859C;
 }
