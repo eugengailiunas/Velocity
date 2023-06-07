@@ -20,8 +20,8 @@ function showTabs(index) {
   tabsBtns[index].classList.add("active");
 };
 
-// hideTabs();
-// showTabs(2);
+hideTabs();
+showTabs(0);
 
 //вызываю на кнопку отслеживание по клику на кнопку нужный таб и отображение его, ориентиром будет индекс
 tabsBtns.forEach((btn, index) => btn.addEventListener("click", () => {
